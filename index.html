@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yayra LAMADOKOU — Portfolio</title>
+  <meta name="description" content="Portfolio of Yayra LAMADOKOU — aspiring Data Scientist and Data Analyst based in Togo. Projects, skills, and contact."/>
+  <style>
+    :root{
+      --bg:#0b0e12; --card:#12161d; --muted:#98a2b3; --text:#e6eaf2; --brand:#4f46e5; --accent:#22c55e; --ring:#334155;
+      --max:1080px; --radius:18px; --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--text); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";}
+    a{color:inherit; text-decoration:none}
+    img{max-width:100%; height:auto}
+    .container{max-width:var(--max); margin:0 auto; padding:0 20px}
+    header{position:sticky; top:0; z-index:10; backdrop-filter:saturate(180%) blur(8px); background:rgba(11,14,18,.7); border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+    .brand{display:flex; gap:10px; align-items:center}
+    .dot{width:12px; height:12px; border-radius:50%; background:linear-gradient(135deg,var(--brand),var(--accent))}
+    .brand h1{font-size:16px; margin:0; letter-spacing:.3px}
+    nav a{padding:8px 10px; border-radius:10px; color:var(--muted)}
+    nav a:hover{background:#1b2230; color:var(--text)}
+
+    .hero{padding:72px 0 36px}
+    .badge{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border:1px solid var(--ring); border-radius:999px; color:var(--muted); font-size:12px}
+    .hero h2{font-size:40px; line-height:1.1; margin:14px 0}
+    .hero p{color:var(--muted); max-width:760px; font-size:18px}
+    .cta{display:flex; gap:12px; margin-top:18px}
+    .btn{padding:12px 18px; border-radius:12px; border:1px solid var(--ring); background:#1a2230; color:#fff}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),#6d28d9)}
+    .btn:hover{transform:translateY(-1px)}
+
+    section{padding:48px 0}
+    .grid{display:grid; gap:20px}
+    @media (min-width:840px){
+      .grid-3{grid-template-columns:repeat(3,1fr)}
+      .grid-2{grid-template-columns:repeat(2,1fr)}
+    }
+    .card{background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:var(--radius); box-shadow:var(--shadow); padding:22px}
+    .card h3{margin:0 0 6px}
+    .muted{color:var(--muted)}
+    .tag{display:inline-block; padding:6px 10px; border:1px solid var(--ring); border-radius:999px; font-size:12px; color:var(--muted); margin:4px 6px 0 0}
+
+    .list{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .pill{padding:8px 12px; border-radius:999px; background:#0f141c; border:1px solid var(--ring); color:#cbd5e1; font-size:13px}
+
+    .project{display:flex; flex-direction:column; gap:10px}
+    .project .foot{display:flex; justify-content:space-between; align-items:center; gap:12px}
+    .project a.link{font-size:14px; color:#c7d2fe; text-decoration:underline dotted}
+
+    .timeline{border-left:2px dashed #223; padding-left:16px}
+    .timeline .item{margin:14px 0}
+    .timeline .item .when{font-size:12px; color:var(--muted)}
+
+    footer{padding:40px 0 60px; color:var(--muted)}
+    .small{font-size:13px}
+
+    /* anchor offsets for sticky header */
+    .anchor{scroll-margin-top:80px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span><h1>Yayra LAMADOKOU</h1></div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#insights">Insights</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <span class="badge">Data Science • Analytics • Econometrics</span>
+      <h2>Turning data into decisions — with rigor, clarity, and impact.</h2>
+      <p>
+        I'm <strong>Yayra LAMADOKOU</strong>, an aspiring <strong>Data Scientist</strong> with a background in <strong>International Economics</strong>. I analyze, model, and visualize data using Python and SQL to answer real-world questions. I’m growing through the ALX Data program and Data Engineering training at Force N, while building projects that matter across finance, education, and social impact.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See Projects</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="anchor">
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>About Me</h3>
+          <p class="muted">
+            Trained in economics (BSc in International Economics), I reinforced my quantitative side with certifications in Data Analysis (Force N) and am currently advancing in <strong>Data Science (ALX)</strong> and <strong>Data Engineering (Force N)</strong>. I’ve worked with <strong>Python</strong> (Pandas, NumPy, scikit-learn), <strong>SQL</strong> (PostgreSQL/MySQL), and <strong>Power BI</strong> to collect, clean, analyze, and visualize data. I also practiced econometrics (Stata) and statistical thinking for evidence-based decisions.
+          </p>
+          <p class="muted">
+            Beyond the technical track, I value leadership, organization, and service. I’ve spent years volunteering to support underprivileged children and environmental initiatives. I’m also building the <strong>INNOVA+</strong> umbrella of projects (finance dashboards, personal finance tools, productivity programs) to bring data-driven problem solving to my community.
+          </p>
+          <div class="list">
+            <span class="pill">Based in Togo</span>
+            <span class="pill">Open to internships & junior roles</span>
+            <span class="pill">Interested in Finance, Policy, EdTech</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Highlights</h3>
+          <div class="timeline">
+            <div class="item">
+              <div><strong>ALX</strong> — Data Science (in progress)</div>
+              <div class="when">2025</div>
+            </div>
+            <div class="item">
+              <div><strong>Force N</strong> — Data Engineering mentorship</div>
+              <div class="when">2025</div>
+            </div>
+            <div class="item">
+              <div><strong>Force N</strong> — Certificate in Data Analysis</div>
+              <div class="when">2024/2025</div>
+            </div>
+            <div class="item">
+              <div><strong>BSc International Economics</strong> — University of Lomé</div>
+              <div class="when">Completed</div>
+            </div>
+          </div>
+          <div class="list" style="margin-top:12px">
+            <span class="pill">Python • SQL • Power BI</span>
+            <span class="pill">Pandas • scikit-learn</span>
+            <span class="pill">Jupyter • Google Colab</span>
+            <span class="pill">Stata • Econometrics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="anchor">
+      <h3>Skills</h3>
+      <div class="grid grid-3">
+        <div class="card">
+          <h4>Programming & Data</h4>
+          <div class="list">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Jupyter/Colab</span>
+          </div>
+        </div>
+        <div class="card">
+          <h4>Databases & BI</h4>
+          <div class="list">
+            <span class="tag">SQL</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Data Modeling</span>
+          </div>
+        </div>
+        <div class="card">
+          <h4>Methods</h4>
+          <div class="list">
+            <span class="tag">Data Cleaning</span>
+            <span class="tag">Exploratory Analysis</span>
+            <span class="tag">Regression & Econometrics</span>
+            <span class="tag">Classification (basics)</span>
+            <span class="tag">Visualization</span>
+            <span class="tag">Experimentation mindset</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="anchor">
+      <h3>Projects</h3>
+      <div class="grid grid-3">
+        <article class="card project">
+          <h4>MyFinance — Personal Finance Dashboard</h4>
+          <p class="muted">End-to-end dashboard to track income, expenses, and savings trends. ETL with Python + CSVs/Sheets, SQL aggregation, and Power BI visuals to identify spending patterns and monthly savings rate.</p>
+          <div class="foot">
+            <div class="list">
+              <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Power BI</span>
+            </div>
+            <a class="link" href="#" target="_blank" rel="noreferrer">(demo link)</a>
+          </div>
+        </article>
+        <article class="card project">
+          <h4>INNOVA+ Data Insights</h4>
+          <p class="muted">Data collection and analysis pipeline for small business operations (sales, engagement). Built reusable notebooks to clean data, compute KPIs, and produce weekly reports for decision-making.</p>
+          <div class="foot">
+            <div class="list">
+              <span class="tag">Pandas</span><span class="tag">Matplotlib</span><span class="tag">Reporting</span>
+            </div>
+            <a class="link" href="#" target="_blank" rel="noreferrer">(repo)</a>
+          </div>
+        </article>
+        <article class="card project">
+          <h4>DeepDiscipline — Learning Analytics</h4>
+          <p class="muted">Analyzed study routines and habit trackers to correlate consistency with outcomes. Built simple models to predict completion probability and surface actionable insights.</p>
+          <div class="foot">
+            <div class="list">
+              <span class="tag">scikit-learn</span><span class="tag">EDA</span><span class="tag">Logistic Regression</span>
+            </div>
+            <a class="link" href="#" target="_blank" rel="noreferrer">(case study)</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- INSIGHTS / BLOG-STYLE SHORTS -->
+    <section id="insights" class="anchor">
+      <h3>Insights & Notes</h3>
+      <div class="grid grid-2">
+        <div class="card">
+          <h4>How I approach a new dataset</h4>
+          <p class="muted">Define the question → audit data quality → clean & document assumptions → EDA with plots & summary stats → baseline model (if needed) → communicate with clear visuals and a concise narrative.</p>
+        </div>
+        <div class="card">
+          <h4>Interests</h4>
+          <p class="muted">Financial inclusion, labor & education outcomes, evidence-based social policy. I love using data to reveal simple actions that create outsized impact.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="anchor">
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Contact</h3>
+          <p class="muted">For collaboration, internships, or junior roles in Data Science / Analytics, feel free to reach out.</p>
+          <p class="small">Replace <em>your-email@example.com</em> with your real email in the code.</p>
+          <div class="list">
+            <a class="pill" href="mailto:your-email@example.com">your-email@example.com</a>
+            <a class="pill" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="pill" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Résumé</h3>
+          <p class="muted">Add a PDF résumé to the repository (e.g., <code>resume.pdf</code>) and link it below.</p>
+          <a class="btn" href="resume.pdf" target="_blank" rel="noreferrer">Download Résumé (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="small">© <span id="year"></span> Yayra LAMADOKOU — Portfolio. Built with HTML • CSS • JS. Deployed on GitHub Pages.</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth-scroll for in-page nav
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href');
+        if(id.length>1){
+          const el=document.querySelector(id);
+          if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth'}); }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
